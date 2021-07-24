@@ -11,11 +11,13 @@
   <!-- Custom -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./assets/styles/grid.css">
   <link rel="stylesheet" href="./assets/styles/main.css">
   <link rel="stylesheet" href="./assets/styles/base.css">
-  <link rel="stylesheet" href="./assets/styles/lognin.css"> 
+  <link rel="stylesheet" href="./assets/styles/lognin.css">
   <!-- End custom -->
 </head>
 
@@ -25,28 +27,34 @@
   <nav class="nav">
     <div class="grid wide">
       <div class="nav__container">
+
+        <!-- Logo -->
         <div class="nav__logo">
-          <a href="#" class="nav__logo-link">
+          <a href="#" class="nav__link">
             <h1>TechShop</h1>
           </a>
         </div>
+
+        <!-- List link -->
         <div class="nav__list">
           <div class="nav__item">
-            <a href="#" class="nav__item-link">
+            <a href="#" class="nav__link">
               Hot Deals
             </a>
           </div>
           <div class="nav__item">
-            <a href="#" class="nav__item-link">
+            <a href="#" class="nav__link">
               Laptop
             </a>
           </div>
           <div class="nav__item">
-            <a href="#" class="nav__item-link">
+            <a href="#" class="nav__link">
               Smartphone
             </a>
           </div>
         </div>
+
+        <!-- sign up, log in buttons -->
         <div class="nav__user">
           <p class="nav__sign-up">
             Sign Up
@@ -55,29 +63,35 @@
             Log In
           </p>
         </div>
+
       </div>
     </div>
   </nav>
+
   <!-- Slider -->
-  <div class="slider">
-    <div class="grid wide">
-      <div class="nav__slider">
-        <div class="nav__slider-info">
-          <p class="product__tag product__tag--new">New</p>
-          <h1 class="product__name">Macbook Pro 13</h1>
-          <h2 class="product__description">The best laptop ever</h2>
-          <p class="product__price">From $1000</p>
-          <a href="#" class="product__buy">Buy</a>
-          <a href="#" class="product__more-info">
-            Learn More
-            <i class="more-info__arrow fas fa-chevron-right"></i></a>
-        </div>
-        <div class="nav__slider-img-container">
-          <img src="./assets/slider/dell-xps.webp" alt="" class="nav__slider-img">
+  <header class="header">
+      <div class="grid wide">
+        <div class="header-slider">
+
+          <!-- Slider info -->
+          <div class="header-slider__info">
+            <p class="header-slider__tag header-slider__tag--new">New</p>
+            <h1 class="header-slider__name">Macbook Pro 13</h1>
+            <h2 class="header-slider__description">The best laptop ever</h2>
+            <p class="header-slider__price">From $1000</p>
+            <a href="#" class="header-slider__buy">Buy</a>
+            <a href="#" class="header-slider__more-info">
+              Learn More
+              <i class="more-info__arrow fas fa-chevron-right"></i></a>
+          </div>
+
+          <!-- Image -->
+          <div class="header-slider__img">
+            <img src="./assets/img/slider/dell-xps.webp" alt="">
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+  </header>
   <!-- End Navigation -->
 
   <!-- Begin Log in / Sign up -->
@@ -115,7 +129,7 @@
           </a>
           <a href="#" class="group-social__btn apple">
             <ion-icon name="logo-apple" class="group-social__btn--icon"></ion-icon>
-            <div class="group-social__btn--text" >Apple</div>
+            <div class="group-social__btn--text">Apple</div>
           </a>
         </div>
 
@@ -136,7 +150,7 @@
         </div>
       </div>
     </div>
-    <div class="login-form "> 
+    <div class="login-form ">
       <!-- thêm "active" vào sẽ hiển thị -->
       <h1 class="form__header">Log In</h1>
       <div class="form__content">
@@ -165,7 +179,7 @@
           </a>
           <a href="#" class="group-social__btn apple">
             <ion-icon name="logo-apple" class="group-social__btn--icon"></ion-icon>
-            <div class="group-social__btn--text" >Apple</div>
+            <div class="group-social__btn--text">Apple</div>
           </a>
         </div>
         <div class="group-disunite">

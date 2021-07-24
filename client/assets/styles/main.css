@@ -37,7 +37,12 @@
 	flex: 1;
 }
 
-.nav__logo > h1 {
+.nav__logo-link {
+	text-decoration: none;
+	color: var(--text-dark-color);
+}
+
+.nav__logo h1 {
 	font-size: 3.8rem;
 }
 

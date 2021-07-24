@@ -26,7 +26,7 @@
 }
 
 .nav {
-	/* border-bottom: 0.1rem solid var(--text-dark-color); */
+	background-color: #f8f8f8;
 }
 
 .nav__container {
@@ -79,8 +79,13 @@
 	justify-content: space-between;
 }
 
-.nav__slider-img {
+.nav__slider-img-container {
 	width: 60%;
+	max-height: 100%;
+}
+.nav__slider-img {
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .nav__slider-info {

@@ -39,6 +39,11 @@
 	flex: 1;
 }
 
+.nav__logo--img > img{
+	width:24rem;
+	height:6rem;
+}
+
 .nav__link {
 	font-size: 1.8rem;
 	text-decoration: none;

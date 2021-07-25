@@ -1,0 +1,208 @@
+.modal {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background-color:rgba(0,0,0,0.3);
+    display: none;
+}
+
+.modal.active {
+    display:flex;
+}
+.register-form {
+    width: 58.8rem;
+    height: 70rem;
+    background-color:#f8f8f8;
+    margin: auto;
+    position:relative;
+    border-radius: 0.8rem;
+    padding:3rem 4.4rem;
+    text-align: center;
+    display:none;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.1);
+}
+
+.register-form.active {
+    display:block;
+}
+
+.form__header {
+    font-size:3rem;
+    line-height: 4.4rem;
+    padding-bottom: 30px;
+}
+
+.group-input {
+    padding-bottom: 10px;
+}
+
+.input__box {
+    width: 50rem;
+    height:6rem;
+    margin-bottom: 20px;
+    display: flex;
+    position: relative;
+}
+
+.input__box > input {
+    width: 100%;
+    height: 100%;
+    border-radius: 1.2rem;
+    float:inherit;
+    font-size:1.6rem;
+    padding-left: 10px;
+    outline: none;
+}
+
+.display__password {
+    font-size:2.4rem;
+    position:absolute;
+    top: 1.6rem;
+    right:1rem;
+    display:none;
+    cursor: pointer;
+}
+
+.display__password.active {
+    display:block;
+}
+
+.group-disunite {
+    border-top: 1px solid #000000;
+    position: relative;
+}
+
+.group-disunite > div {
+    position: absolute;
+    background-color:#f8f8f8;
+    width: 10rem;
+    height:3rem;
+    font-size: 1.6rem;
+    line-height:3rem;
+    top:-1.5rem;
+    right:20rem;
+}
+
+.group-social {
+    display: flex;
+    justify-content: space-between;
+    margin:3rem 0;
+}
+
+.group-social__btn {
+    width: 15rem;
+    height: 6rem;
+    border-radius:1.2rem;
+    border:1px solid;
+    display: flex;
+    font-size:1.6rem;
+    line-height: 6rem;
+    color: #f8f8f8;
+    text-decoration: none;
+}
+
+.group-social__btn--icon {
+    font-size:3rem;
+    margin:auto 0 auto 10px;
+}
+
+.group-social__btn--text {
+    margin:auto;
+    font-weight: 300;
+}
+.group-social__btn.facebook {
+    background-color:#3f5c94;
+}
+
+.group-social__btn.google {
+    background-color:#4286f5;
+}
+
+.group-social__btn.apple {
+    background-color:#000000;
+}
+
+.group-rules {
+    display: flex;
+    font-size:1.6rem;
+    padding-bottom: 20px;
+}
+
+.group-rules >input {
+    margin:auto 0;
+    width: 1.8rem;
+    height:1.8rem;
+}
+
+.group-rules >div {
+    padding-left: 10px;
+    font-weight: 500;
+}
+
+.group-confirm {
+    width: 50rem;
+    height:6rem;
+    border-radius: 1.2rem;
+    border: 3px solid;
+    font-size: 3rem;
+    line-height: 5.5rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.group-confirm.register {
+    background-color:#f8f8f8;
+}
+
+
+.form__note {
+    display: flex;
+    font-size:2rem;
+    padding-top:2rem;
+}
+
+.form__note > div {
+    display: flex;
+    margin: auto;
+}
+
+.form__note--login {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    padding-left: 5px;
+}
+
+/* CSS login */
+.login-form {
+    width: 58.8rem;
+    height: 61.1rem;
+    background-color:#f8f8f8;
+    margin: auto;
+    position:relative;
+    border-radius: 0.8rem;
+    padding:3rem 4.4rem;
+    text-align: center;
+    display:none;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.1);
+}
+
+.login-form.active {
+    display:block;
+}
+
+.form__content > a {
+    font-size:2rem;
+    font-weight: 500;
+    color: #000000;
+    text-decoration: none;
+    margin-right: 32rem;
+}
+
+.group-confirm.login {
+    margin-top: 20px;
+    background-color:#000000;
+    color: #f8f8f8
+}

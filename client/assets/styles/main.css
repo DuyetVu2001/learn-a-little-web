@@ -26,7 +26,8 @@
 }
 
 .nav {
-	background-color: #f8f8f8;
+	/* background-color: #f8f8f8; */
+	border-bottom: 1px solid black;
 }
 
 .nav__container {

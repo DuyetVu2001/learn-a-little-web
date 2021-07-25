@@ -108,6 +108,21 @@
     margin:auto 0 auto 10px;
 }
 
+.group-social__btn--icon-google {
+    background-color:var(--text-white-color);
+    width: 3rem;
+    height: 3rem;
+    border-radius:50%;
+    margin:auto 0 auto 1rem;
+    display: flex;
+}
+
+.group-social__btn--icon-google > img {
+    width: 2rem;
+    height: 2rem;
+    margin:auto;
+}
+
 .group-social__btn--text {
     margin:auto;
     font-weight: 300;

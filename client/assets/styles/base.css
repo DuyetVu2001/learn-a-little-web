@@ -12,13 +12,12 @@ html {
 
 	box-sizing: border-box;
 }
-/* End reset css */
 
 /* ==================Variables======================== */
 :root {
 	--text-dark-color: #000;
 	--text-white-color: #fff;
 	--btn-and-link-color: #0271e2;
-	--text-normal-size: 1.6rem;
+
+	--text-size: 1.6rem;
 }
-/* End variables */

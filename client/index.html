@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="./assets/styles/grid.css">
   <link rel="stylesheet" href="./assets/styles/main.css">
   <link rel="stylesheet" href="./assets/styles/base.css">
-  <link rel="stylesheet" href="./assets/styles/lognin.css">
+  <link rel="stylesheet" href="./assets/styles/log-in.css">
   <!-- End custom -->
 </head>
 
@@ -56,10 +56,10 @@
 
         <!-- sign up, log in buttons -->
         <div class="nav__user">
-          <p class="nav__sign-up">
+          <p class="nav__sign-up" onclick="displayGrid('register-form')">
             Sign Up
           </p>
-          <p class="nav__log-in">
+          <p class="nav__log-in" onclick="displayGrid('login-form')">
             Log In
           </p>
         </div>
@@ -67,57 +67,65 @@
       </div>
     </div>
   </nav>
+  <!-- End Navigation -->
 
   <!-- Slider -->
   <header class="header">
-      <div class="grid wide">
-        <div class="header-slider">
+    <div class="grid wide">
+      <div class="header-slider">
 
-          <!-- Slider info -->
-          <div class="header-slider__info">
-            <p class="header-slider__tag header-slider__tag--new">New</p>
-            <h1 class="header-slider__name">Macbook Pro 13</h1>
-            <h2 class="header-slider__description">The best laptop ever</h2>
-            <p class="header-slider__price">From $1000</p>
-            <a href="#" class="header-slider__buy">Buy</a>
-            <a href="#" class="header-slider__more-info">
-              Learn More
-              <i class="more-info__arrow fas fa-chevron-right"></i></a>
-          </div>
+        <!-- Slider info -->
+        <div class="header-slider__info">
+          <p class="header-slider__tag header-slider__tag--new">New</p>
+          <h1 class="header-slider__name">Macbook Pro 13</h1>
+          <h2 class="header-slider__description">The best laptop ever</h2>
+          <p class="header-slider__price">From $1000</p>
+          <a href="#" class="header-slider__buy">Buy</a>
+          <a href="#" class="header-slider__more-info">
+            Learn More
+            <i class="more-info__arrow fas fa-chevron-right"></i></a>
+        </div>
 
-          <!-- Image -->
-          <div class="header-slider__img">
-            <img src="./assets/img/slider/dell-xps.webp" alt="">
-          </div>
+        <!-- Image -->
+        <div class="header-slider__img">
+          <img src="./assets/img/slider/dell-xps.webp" alt="">
         </div>
       </div>
+    </div>
   </header>
-  <!-- End Navigation -->
+  <!-- End Slider
 
-  <!-- Begin Log in / Sign up -->
-  <div class="modal "> 
-    <!-- thêm "active" vào sẽ hiển thị -->
-    <div class="register-form "> 
-      <!-- thêm "active" vào sẽ hiển thị -->
+  <!-- Begin sign up form -->
+  <!-- add 'active' to display -->
+  <div class="register-form-wrapper">
+    <!-- Modal -->
+    <div id="modal" onclick="displayNone('register-form')"></div>
+
+    <div class="register-form">
       <h1 class="form__header">Sign Up</h1>
-      <div class="form__content">
+      <form class="form__content">
+
+        <!-- Group input -->
         <div class="group-input">
           <div class="input__box">
-            <input type="email" placeholder="Email or phone number">
+            <input type="email" required placeholder="Email or phone number">
           </div>
           <div class="input__box">
-            <input type="password" placeholder="Password">
+            <input type="password" required placeholder="Password">
             <ion-icon name="eye-off-outline" class="display__password active"></ion-icon>
             <ion-icon name="eye-outline" class="display__password "></ion-icon>
           </div>
           <div class="input__box">
-            <input type="password" placeholder="Repeat your password">
+            <input type="password" required placeholder="Repeat your password">
           </div>
         </div>
+
+        <!-- OR -->
         <div class="group-disunite">
           <div>OR</div>
         </div>
 
+        <!-- Group socials -->
         <div class="group-social">
           <a href="#" class="group-social__btn facebook">
             <ion-icon name="logo-facebook" class="group-social__btn--icon"></ion-icon>
@@ -135,41 +143,56 @@
           </a>
         </div>
 
+        <!-- Rules -->
         <div class="group-rules">
-          <input type="checkbox">
+          <input type="checkbox" required>
           <div>I agree all statements in Teams of service</div>
         </div>
 
-        <div class="group-confirm register">
-          Sign Up
-        </div>
+        <!-- Submit button -->
+        <button class="group-confirm register" type="submit">Sign Up</button>
 
+        <!-- Note -->
         <div class="form__note">
           <div>
             <div class="form__note--text">Have already an account ?</div>
             <a href="#" class="form__note--login">Log In here</a>
           </div>
         </div>
-      </div>
+      </form>
     </div>
-    <div class="login-form ">
-      <!-- thêm "active" vào sẽ hiển thị -->
+  </div>
+  <!-- End sign up form -->
+
+  <!-- Begin login form -->
+  <!-- add 'active' to display -->
+  <div class="login-form-wrapper">
+
+    <!-- modal -->
+    <div id="modal" onclick="displayNone('login-form')"></div>
+
+    <div class="login-form">
       <h1 class="form__header">Log In</h1>
-      <div class="form__content">
+
+      <form class="form__content">
+
+        <!-- Group input -->
         <div class="group-input">
           <div class="input__box">
-            <input type="email" placeholder="Email or phone number">
+            <input type="email" required placeholder="Email or phone number">
           </div>
           <div class="input__box">
-            <input type="password" placeholder="Password">
+            <input type="password" required placeholder="Password">
             <ion-icon name="eye-off-outline" class="display__password active"></ion-icon>
             <ion-icon name="eye-outline" class="display__password "></ion-icon>
           </div>
         </div>
         <a href="#">Forgot Password ?</a>
-        <div class="group-confirm login">
-          Log In
-        </div>
+
+        <!-- Log in btn -->
+        <button class="group-confirm login" type="submit">Log In</button>
+
+        <!-- Group socials -->
         <div class="group-social">
           <a href="#" class="group-social__btn facebook">
             <ion-icon name="logo-facebook" class="group-social__btn--icon"></ion-icon>
@@ -186,23 +209,31 @@
             <div class="group-social__btn--text">Apple</div>
           </a>
         </div>
+
+        <!-- OR -->
         <div class="group-disunite">
           <div>OR</div>
         </div>
+
+        <!-- Note -->
         <div class="form__note">
           <div>
             <div class="form__note--text">Haven't you have an account ?</div>
             <a href="#" class="form__note--login">Log In here</a>
           </div>
         </div>
-      </div>
+      </form>
     </div>
+    <!-- End login form -->
   </div>
-  <!-- End Logn in/ Sign up -->
+  <!-- End Log in/ Sign up -->
 
   <!-- Icon: https://ionic.io/ionicons -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Javascript -->
+  <script src="./main.js"></script>
 </body>
 
 </html>

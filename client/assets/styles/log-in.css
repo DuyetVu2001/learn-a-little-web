@@ -8,14 +8,20 @@
 	background-color: rgba(0, 0, 0, 0.3);
 }
 
-/* .modal.active {
-	display: flex;
-} */
-
 /* register */
+.register-form-wrapper {
+	position: fixed;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	top: 0;
+
+	display: none;
+	place-items: center;
+}
+
 .register-form {
 	position: relative;
-	display: none;
 
 	width: 58.8rem;
 	height: 70rem;
@@ -183,6 +189,7 @@
 
 .group-confirm.register {
 	background-color: #f8f8f8;
+	font-weight: 600;
 }
 
 .form__note {
@@ -204,14 +211,14 @@
 }
 
 /* CSS login */
-.wrapper {
+.login-form-wrapper {
 	position: fixed;
 	right: 0;
 	left: 0;
 	bottom: 0;
 	top: 0;
 
-	display: grid;
+	display: none;
 	place-items: center;
 }
 
@@ -245,6 +252,8 @@
 .group-confirm.login {
 	margin-top: 30px;
 	border: none;
+
+	font-weight: 600;
 	color: #f8f8f8;
 	background-color: #000000;
 }

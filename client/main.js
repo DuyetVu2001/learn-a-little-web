@@ -1,7 +1,29 @@
-// Toggle sign in/ sign out
-const signUpBtnElement = document.querySelector('.nav__sign-up');
-signUpBtnElement.addEventListener('click', () => {
-	modalElement.style.display = 'block';
-});
+/* Toggle sign in/ sign out */ 
+// Select form
+const registerForm = document.querySelector('.register-form-wrapper');
+const logInForm = document.querySelector('.login-form-wrapper');
 
-const modalElement = document.querySelector('#modal');
+// Set display grid when click
+const displayGrid = (element) => {
+	switch (element) {
+		case 'register-form':
+			return (registerForm.style.display = 'grid');
+		case 'login-form':
+			return (logInForm.style.display = 'grid');
+		default:
+			return alert('Incorrect name of argument!');
+	}
+};
+
+// Set display none when click out to modal
+const displayNone = (element) => {
+	switch (element) {
+		case 'register-form':
+			return (registerForm.style.display = 'none');
+		case 'login-form':
+			return (logInForm.style.display = 'none');
+		default:
+			return alert('Incorrect name of argument!');
+	}
+};
+/* End toggle sign in/ sign out */

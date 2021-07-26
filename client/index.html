@@ -56,10 +56,10 @@
 
         <!-- sign up, log in buttons -->
         <div class="nav__user">
-          <p class="nav__sign-up">
+          <p class="nav__sign-up" onclick="displayGrid('register-form')">
             Sign Up
           </p>
-          <p class="nav__log-in">
+          <p class="nav__log-in" onclick="displayGrid('login-form')">
             Log In
           </p>
         </div>
@@ -67,167 +67,165 @@
       </div>
     </div>
   </nav>
+  <!-- End Navigation -->
 
   <!-- Slider -->
   <header class="header">
-      <div class="grid wide">
-        <div class="header-slider">
+    <div class="grid wide">
+      <div class="header-slider">
 
-          <!-- Slider info -->
-          <div class="header-slider__info">
-            <p class="header-slider__tag header-slider__tag--new">New</p>
-            <h1 class="header-slider__name">Macbook Pro 13</h1>
-            <h2 class="header-slider__description">The best laptop ever</h2>
-            <p class="header-slider__price">From $1000</p>
-            <a href="#" class="header-slider__buy">Buy</a>
-            <a href="#" class="header-slider__more-info">
-              Learn More
-              <i class="more-info__arrow fas fa-chevron-right"></i></a>
-          </div>
+        <!-- Slider info -->
+        <div class="header-slider__info">
+          <p class="header-slider__tag header-slider__tag--new">New</p>
+          <h1 class="header-slider__name">Macbook Pro 13</h1>
+          <h2 class="header-slider__description">The best laptop ever</h2>
+          <p class="header-slider__price">From $1000</p>
+          <a href="#" class="header-slider__buy">Buy</a>
+          <a href="#" class="header-slider__more-info">
+            Learn More
+            <i class="more-info__arrow fas fa-chevron-right"></i></a>
+        </div>
 
-          <!-- Image -->
-          <div class="header-slider__img">
-            <img src="./assets/img/slider/dell-xps.webp" alt="">
-          </div>
+        <!-- Image -->
+        <div class="header-slider__img">
+          <img src="./assets/img/slider/dell-xps.webp" alt="">
         </div>
       </div>
+    </div>
   </header>
-  <!-- End Navigation -->
+  <!-- End Slider
 
-<!-- Begin sign up form -->
-<div class="register-form"> <!-- add 'active' to display -->
-  <h1 class="form__header">Sign Up</h1>
+  <!-- Begin sign up form -->
+  <!-- add 'active' to display -->
+  <div class="register-form-wrapper">
+    <!-- Modal -->
+    <div id="modal" onclick="displayNone('register-form')"></div>
 
-  <form class="form__content">
-    
-    <!-- Group input -->
-    <div class="group-input">
-      <div class="input__box">
-        <input type="email" placeholder="Email or phone number">
-      </div>
-      <div class="input__box">
-        <input type="password" placeholder="Password">
-        <ion-icon name="eye-off-outline" class="display__password active"></ion-icon>
-        <ion-icon name="eye-outline" class="display__password "></ion-icon>
-      </div>
-      <div class="input__box">
-        <input type="password" placeholder="Repeat your password">
-      </div>
-    </div>
+    <div class="register-form">
+      <h1 class="form__header">Sign Up</h1>
+      <form class="form__content">
 
-    <!-- OR -->
-    <div class="group-disunite">
-      <div>OR</div>
-    </div>
-
-    <!-- Group socials -->
-    <div class="group-social">
-      <a href="#" class="group-social__btn facebook">
-        <ion-icon name="logo-facebook" class="group-social__btn--icon"></ion-icon>
-        <div class="group-social__btn--text">Facebook</div>
-      </a>
-      <a href="#" class="group-social__btn google">
-        <div class="group-social__btn--icon-google">
-          <img src="./assets/img/img/logoGoogle.png" alt="">
+        <!-- Group input -->
+        <div class="group-input">
+          <div class="input__box">
+            <input type="email" required placeholder="Email or phone number">
+          </div>
+          <div class="input__box">
+            <input type="password" required placeholder="Password">
+            <ion-icon name="eye-off-outline" class="display__password active"></ion-icon>
+            <ion-icon name="eye-outline" class="display__password "></ion-icon>
+          </div>
+          <div class="input__box">
+            <input type="password" required placeholder="Repeat your password">
+          </div>
         </div>
-        <div class="group-social__btn--text">Google</div>
-      </a>
-      <a href="#" class="group-social__btn apple">
-        <ion-icon name="logo-apple" class="group-social__btn--icon"></ion-icon>
-        <div class="group-social__btn--text">Apple</div>
-      </a>
-    </div>
 
-    <!-- Rules -->
-    <div class="group-rules">
-      <input type="checkbox">
-      <div>I agree all statements in Teams of service</div>
-    </div>
-    
-    <!-- Submit button -->
-    <div class="group-confirm register">
-      Sign Up
-    </div>
+        <!-- OR -->
+        <div class="group-disunite">
+          <div>OR</div>
+        </div>
 
-    <!-- Note -->
-    <div class="form__note">
-      <div>
-        <div class="form__note--text">Have already an account ?</div>
-        <a href="#" class="form__note--login">Log In here</a>
-      </div>
-    </div>
-  </form>
-</div>
-<!-- End sign up form -->
-
-
-
-
-
-
-
-  <!-- Begin Log in / Sign up -->
-  
-
-    <!-- Begin login form -->
-    <div class="wrapper">
-
-      <!-- modal -->
-      <div id="modal"></div>
-
-      <div class="login-form">
-        <h1 class="form__header">Log In</h1>
-      
-        <form class="form__content">
-          <!-- Group input -->
-          <div class="group-input">
-            <div class="input__box">
-              <input type="email" placeholder="Email or phone number">
+        <!-- Group socials -->
+        <div class="group-social">
+          <a href="#" class="group-social__btn facebook">
+            <ion-icon name="logo-facebook" class="group-social__btn--icon"></ion-icon>
+            <div class="group-social__btn--text">Facebook</div>
+          </a>
+          <a href="#" class="group-social__btn google">
+            <div class="group-social__btn--icon-google">
+              <img src="./assets/img/img/logoGoogle.png" alt="">
             </div>
-            <div class="input__box">
-              <input type="password" placeholder="Password">
-              <ion-icon name="eye-off-outline" class="display__password active"></ion-icon>
-              <ion-icon name="eye-outline" class="display__password "></ion-icon>
+            <div class="group-social__btn--text">Google</div>
+          </a>
+          <a href="#" class="group-social__btn apple">
+            <ion-icon name="logo-apple" class="group-social__btn--icon"></ion-icon>
+            <div class="group-social__btn--text">Apple</div>
+          </a>
+        </div>
+
+        <!-- Rules -->
+        <div class="group-rules">
+          <input type="checkbox" required>
+          <div>I agree all statements in Teams of service</div>
+        </div>
+
+        <!-- Submit button -->
+        <button class="group-confirm register" type="submit">Sign Up</button>
+
+        <!-- Note -->
+        <div class="form__note">
+          <div>
+            <div class="form__note--text">Have already an account ?</div>
+            <a href="#" class="form__note--login">Log In here</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- End sign up form -->
+
+  <!-- Begin login form -->
+  <!-- add 'active' to display -->
+  <div class="login-form-wrapper">
+
+    <!-- modal -->
+    <div id="modal" onclick="displayNone('login-form')"></div>
+
+    <div class="login-form">
+      <h1 class="form__header">Log In</h1>
+
+      <form class="form__content">
+
+        <!-- Group input -->
+        <div class="group-input">
+          <div class="input__box">
+            <input type="email" required placeholder="Email or phone number">
+          </div>
+          <div class="input__box">
+            <input type="password" required placeholder="Password">
+            <ion-icon name="eye-off-outline" class="display__password active"></ion-icon>
+            <ion-icon name="eye-outline" class="display__password "></ion-icon>
+          </div>
+        </div>
+        <a href="#">Forgot Password ?</a>
+
+        <!-- Log in btn -->
+        <button class="group-confirm login" type="submit">Log In</button>
+
+        <!-- Group socials -->
+        <div class="group-social">
+          <a href="#" class="group-social__btn facebook">
+            <ion-icon name="logo-facebook" class="group-social__btn--icon"></ion-icon>
+            <div class="group-social__btn--text">Facebook</div>
+          </a>
+          <a href="#" class="group-social__btn google">
+            <div class="group-social__btn--icon-google">
+              <img src="./assets/img/img/logoGoogle.png" alt="">
             </div>
+            <div class="group-social__btn--text">Google</div>
+          </a>
+          <a href="#" class="group-social__btn apple">
+            <ion-icon name="logo-apple" class="group-social__btn--icon"></ion-icon>
+            <div class="group-social__btn--text">Apple</div>
+          </a>
+        </div>
+
+        <!-- OR -->
+        <div class="group-disunite">
+          <div>OR</div>
+        </div>
+
+        <!-- Note -->
+        <div class="form__note">
+          <div>
+            <div class="form__note--text">Haven't you have an account ?</div>
+            <a href="#" class="form__note--login">Log In here</a>
           </div>
-          <a href="#">Forgot Password ?</a>
-          <!-- Log in btn -->
-          <div class="group-confirm login">
-            Log In
-          </div>
-          <!-- Group socials -->
-          <div class="group-social">
-            <a href="#" class="group-social__btn facebook">
-              <ion-icon name="logo-facebook" class="group-social__btn--icon"></ion-icon>
-              <div class="group-social__btn--text">Facebook</div>
-            </a>
-            <a href="#" class="group-social__btn google">
-              <div class="group-social__btn--icon-google">
-                <img src="./assets/img/img/logoGoogle.png" alt="">
-              </div>
-              <div class="group-social__btn--text">Google</div>
-            </a>
-            <a href="#" class="group-social__btn apple">
-              <ion-icon name="logo-apple" class="group-social__btn--icon"></ion-icon>
-              <div class="group-social__btn--text">Apple</div>
-            </a>
-          </div>
-          <!-- OR -->
-          <div class="group-disunite">
-            <div>OR</div>
-          </div>
-          <!-- Note -->
-          <div class="form__note">
-            <div>
-              <div class="form__note--text">Haven't you have an account ?</div>
-              <a href="#" class="form__note--login">Log In here</a>
-            </div>
-          </div>
-        </form>
+        </div>
       </form>
     </div>
     <!-- End login form -->
-  
+  </div>
   <!-- End Log in/ Sign up -->
 
   <!-- Icon: https://ionic.io/ionicons -->
